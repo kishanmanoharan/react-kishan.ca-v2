@@ -1,12 +1,10 @@
 import React from "react";
 import { Container, Button, Row, Col } from "react-bootstrap";
 import "./KishanManoharanResume-2023.3.pdf";
-
-var randomColor = require("random-color");
+import randomColor from "randomcolor";
 
 function randColor() {
-  var color = randomColor();
-  return color.hexString();
+  return randomColor({ luminosity: "light" });
 }
 
 export const Resume = () => {
