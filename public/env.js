@@ -40,6 +40,7 @@ window.env = {
   "NPM_CLI_JS": "C:\\Users\\kisha\\AppData\\Local\\nvs\\node\\18.16.1\\x64\\node_modules\\npm\\bin\\npm-cli.js",
   "npm_command": "run-script",
   "npm_config_cache": "C:\\Users\\kisha\\AppData\\Local\\npm-cache",
+  "npm_config_force": "true",
   "npm_config_globalconfig": "C:\\Users\\kisha\\AppData\\Local\\nvs\\node\\18.16.1\\x64\\etc\\npmrc",
   "npm_config_global_prefix": "C:\\Users\\kisha\\AppData\\Local\\nvs\\node\\18.16.1\\x64",
   "npm_config_init_module": "C:\\Users\\kisha\\.npm-init.js",
