@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 
-import { Navigation, Pagination, Parallax } from "swiper/modules";
+import { Pagination, Parallax } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -40,11 +40,10 @@ const KParallax = () => {
   return (
     <Swiper
       className="container parallax__container"
-      modules={[Pagination, Parallax, Navigation]}
+      modules={[Pagination, Parallax]}
       spaceBetween={10}
       slidesPerView={2}
       pagination={true}
-      navigation={true}
       scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
