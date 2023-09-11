@@ -1,22 +1,11 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  overflow-y: auto;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  background-color: transparent;
+  display: block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -28,11 +17,224 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#tsparticles {
+  z-index: -10;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: #000;
+}
+
+nav {
+  margin: 2vh 2vw !important;
+  padding: 0.5vh 2vw !important;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #ffffff20 !important;
+}
+
+.navbar-btn {
+  margin: 0.5vh 0.5vw;
+  border-radius: 16px;
+  padding: 6px 12px;
+  background-color: #ffffff20 !important;
+}
+
+a {
+  color: #fff !important;
+}
+
+.blur {
+  backdrop-filter: blur(2px);
+}
+.grey {
+  background-color: #ffffff20;
+  border-radius: 15px;
+  backdrop-filter: blur(2px);
+}
+.align-middle {
+  vertical-align: middle !important;
+}
+
+.title-pad-0 {
+  margin-top: 5vh;
+}
+.title-pad-1 {
+  margin-top: 13vh;
+}
+.title-pad-2 {
+  margin-top: 22vh;
+}
+.title-pad-3 {
+  margin-top: 30vh;
+}
+.title h1 {
+  font-weight: 300 !important;
+  font-size: 220% !important;
+}
+.title h2 {
+  font-weight: 300 !important;
+  font-size: 180% !important;
+}
+.title h3 {
+  font-weight: 300 !important;
+  font-size: 120% !important;
+}
+.title h4 {
+  font-weight: 300 !important;
+  font-size: 80% !important;
+}
+.title h5 {
+  font-weight: 300 !important;
+  font-size: 70% !important;
+}
+.title p {
+  font-weight: 300 !important;
+  font-size: 50% !important;
+}
+
+.info {
+  padding: 2vh 2vw;
+}
+
+.btn {
+  border-radius: 10px !important;
+  border: none !important;
+  background-color: #ffffff20 !important;
+  color: #ffffff !important;
+  margin: 1vh 1vw !important;
+  padding: 1vh 1vw !important;
+}
+
+.btn:hover {
+  border: none !important;
+  background-color: #ffffffa0 !important;
+  color: #000000 !important;
+}
+.btn:active {
+  border-color: none !important;
+}
+.btn:focus {
+  border-color: none !important;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  box-shadow: none !important;
+}
+
+.svg {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  max-height: 150px;
+  margin: 1vh 1vw;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+.svg:hover {
+  opacity: 1;
+}
+
+.progress-bar-container {
+  background-color: #ffffff50;
+  width: 100%;
+  height: 15px;
+  border-radius: 20px;
+  /* margin: 10px 0; */
+}
+.progress-bar {
+  /* background-color: #fff !important; */
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #ccc 25px,
+    #fff 25px,
+    #fff 50px,
+    #ccc 50px,
+    #ccc 75px
+  ) !important;
+  width: 100%;
+  height: 15px;
+  border-radius: 20px;
+  background-repeat: repeat-x;
+}
+
+#ambientspotify {
+  background-image: url("img/ambientspotify.PNG");
+}
+#simplestats {
+  background-image: url("img/simplestats.PNG");
+}
+#minimalminispotify {
+  background-image: url("img/minimalminispotify.PNG");
+}
+#peopleplanner {
+  background-image: url("img/peopleplanner.PNG");
+}
+
+.tag {
+  background-color: #333;
+  border-radius: 15px;
+  width: fit-content;
+  font-weight: 300;
+  font-size: medium;
+  padding: 6px 10px !important;
+  margin: 4px !important;
+  display: inline-block;
+}
+
+.form-control {
+  background-color: #ffffff20 !important;
+  border: 1px solid #0000 !important;
+  color: #ccc !important;
+  border-radius: 15px !important;
+  backdrop-filter: blur(2px);
+}
+.form-control:focus {
+  background-color: #ffffff20 !important;
+  border: 1px solid #aaa !important;
+  box-shadow: 0px 0px 5px 1px #aaa !important;
+}
+.form-label {
+  font-size: 70% !important;
+}
+.form-group {
+  text-align: start !important;
+}
+.alert {
+  border-radius: 15px !important;
+  padding: 0.4rem !important;
+}
+
+.project-card {
+  border-radius: 25px;
+  min-height: 50vh;
+  backdrop-filter: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 !important;
+  background-color: #202020;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.project-text {
+  padding: 1vh;
+  /* border-radius: 25px; */
+  backdrop-filter: blur(5px);
+  background-color: #000000a0;
+}
+
+.project-title {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #fff;
+}
+.project-info {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
 }
